@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#7a1532"><title>Register · Dandiya Nights</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body class="form-page"><nav class="nav container"><a class="brand" href="index.html">स्वांग <span>उत्सव</span></a><a class="back" href="index.html">← Back to event</a></nav>
+<main class="form-layout container"><section class="form-aside"><p class="eyebrow">NAVRATRI CELEBRATION 2026</p><h1>Join the<br><em>celebration.</em></h1><p>Reserve your place for an unforgettable evening of dandiya, music, and colour.</p><div class="aside-meta"><span>SWANG DURGA PUJA PANDAL</span><span>7 PM – 10 PM</span></div></section>
+<section class="form-card"><div class="form-top"><span>REGISTRATION</span><span>01 / 01</span></div><h2>Your details</h2><p class="form-note">Please fill in the details below to reserve your entry.</p>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Replace the value below with your Web3Forms access key. The recipient email is set in that key's Web3Forms dashboard. -->
+  <input type="hidden" name="access_key" value="68afbef3-7884-49bf-ba85-b0b6fa467a88">
+  <input type="hidden" name="subject" value="New Dandiya Nights Registration">
+  <input type="hidden" name="redirect" value="https://gomia-3.netlify.app/thank-you.html">
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+  <input type="hidden" name="Guest Count" id="guest-input" value="1"><input type="hidden" name="Total Amount" id="price-input" value="₹299">
+  <label>Full name<input required name="Name" type="text" placeholder="Enter your name" autocomplete="name"></label>
+  <label>Mobile number<input required name="Mobile Number" type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel"></label>
+  <div class="guest-row"><div><label>Number of guests</label><small>Maximum 4 guests per registration</small></div><div class="stepper"><button type="button" id="minus" aria-label="Remove guest">−</button><output id="count">1</output><button type="button" id="plus" aria-label="Add guest">+</button></div></div>
+  <div class="total"><div><span>Total amount</span><small>Payment details after registration</small></div><strong id="price">₹299</strong></div>
+  <button class="button submit" type="submit">Register now <span>→</span></button>
+</form></section></main><script src="script.js"></script></body></html>
