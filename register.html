@@ -1,19 +1,55 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#7a1532"><title>Register · Dandiya Nights</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
-<body class="form-page"><nav class="nav container"><a class="brand" href="index.html">स्वांग <span>उत्सव</span></a><a class="back" href="index.html">← Back to event</a></nav>
-<main class="form-layout container"><section class="form-aside"><p class="eyebrow">NAVRATRI CELEBRATION 2026</p><h1>Join the<br><em>celebration.</em></h1><p>Reserve your place for an unforgettable evening of dandiya, music, and colour.</p><div class="aside-meta"><span>SWANG DURGA PUJA PANDAL</span><span>7 PM – 10 PM</span></div></section>
-<section class="form-card"><div class="form-top"><span>REGISTRATION</span><span>01 / 01</span></div><h2>Your details</h2><p class="form-note">Please fill in the details below to reserve your entry.</p>
-<form action="https://api.web3forms.com/submit" method="POST">
-  <!-- Replace the value below with your Web3Forms access key. The recipient email is set in that key's Web3Forms dashboard. -->
-  <input type="hidden" name="access_key" value="68afbef3-7884-49bf-ba85-b0b6fa467a88">
-  <input type="hidden" name="subject" value="New Dandiya Nights Registration">
-  <input type="hidden" name="redirect" value="https://gomia-3.netlify.app/thank-you.html">
-  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-  <input type="hidden" name="Guest Count" id="guest-input" value="1"><input type="hidden" name="Total Amount" id="price-input" value="₹299">
-  <label>Full name<input required name="Name" type="text" placeholder="Enter your name" autocomplete="name"></label>
-  <label>Mobile number<input required name="Mobile Number" type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel"></label>
-  <div class="guest-row"><div><label>Number of guests</label><small>Maximum 4 guests per registration</small></div><div class="stepper"><button type="button" id="minus" aria-label="Remove guest">−</button><output id="count">1</output><button type="button" id="plus" aria-label="Add guest">+</button></div></div>
-  <div class="total"><div><span>Total amount</span><small>Payment details after registration</small></div><strong id="price">₹299</strong></div>
-  <button class="button submit" type="submit">Register now <span>→</span></button>
-</form></section></main><script src="script.js"></script></body></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7a1532">
+  <title>Thank You · Dandiya Nights Swang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero thank-hero">
+      <div class="glow glow-one"></div><div class="glow glow-two"></div>
+      <nav class="nav container"><a class="brand" href="index.html">स्वांग <span>उत्सव</span></a><span class="nav-note">DANDIYA NIGHTS 2026</span></nav>
+      <div class="hero-content container">
+        <p class="eyebrow">✦ &nbsp; WITH GRATITUDE &nbsp; ✦</p>
+        <h1>Thank <em>You</em></h1>
+        <p class="hero-copy">आप सभी के प्यार, उत्साह और साथ ने Dandiya Nights को यादगार बना दिया।<br>Because of you, every beat, every colour, and every smile came alive.</p>
+        <a class="button button-light" href="#gratitude">हमारा आभार <span>↓</span></a>
+      </div>
+      <div class="dandiya d1">╲</div><div class="dandiya d2">╱</div>
+      <div class="hero-footer container"><span>15 OCTOBER 2026</span><span class="scroll">यादें हमेशा रहेंगी <i></i></span><span>SWANG, GOMIA</span></div>
+    </section>
+
+    <section id="gratitude" class="intro section container">
+      <div class="section-label">01 / दिल से धन्यवाद</div>
+      <div><h2>एक शाम, कई<br><i>खूबसूरत यादें।</i></h2></div>
+      <p>Dandiya Nights सिर्फ एक event नहीं था—यह Swang की खुशी, संस्कृति और एकजुटता का जश्न था। आपका साथ इस शाम की सबसे बड़ी रौनक बना।</p>
+    </section>
+
+    <section class="gratitude-section">
+      <div class="container">
+        <div class="gratitude-heading"><div class="section-label">02 / हमारा परिवार</div><p>हर भूमिका ने इस उत्सव को सफल बनाया। हम दिल से आपका धन्यवाद करते हैं।</p></div>
+        <div class="gratitude-grid">
+          <article><span>✦</span><h3>Participants</h3><p>आपकी ऊर्जा, रंग-बिरंगी पोशाकें और शानदार dance moves ने मंच को जीवंत बना दिया।</p></article>
+          <article><span>✦</span><h3>Volunteers</h3><p>आपकी मेहनत, समय और हर छोटी-बड़ी जिम्मेदारी ने इस कार्यक्रम को सहज बनाया।</p></article>
+          <article><span>✦</span><h3>Supporting Staff</h3><p>Behind the scenes आपका समर्पण इस खूबसूरत शाम की मजबूत नींव रहा।</p></article>
+          <article><span>✦</span><h3>Sponsors</h3><p>आपके विश्वास और सहयोग के बिना इस उत्सव को इतना खास बनाना संभव नहीं था।</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory section container">
+      <div class="memory-symbol">✺</div>
+      <div><p class="section-label">03 / यादों के नाम</p><h2>Music faded.<br><i>The memories won’t.</i></h2><p>15 October 2026 की यह रात हमेशा हमारे दिलों में रहेगी—दांडिया की ताल, अपनों की हँसी और उत्सव के वो अनमोल पल। फिर मिलेंगे, एक नए जश्न के साथ!</p></div>
+    </section>
+
+    <section class="cta gratitude-cta"><div class="container"><p>SWANG DURGA PUJA PANDAL FAMILY</p><h2>See you at the<br><i>next celebration.</i></h2><p class="cta-signoff">प्यार और आभार के साथ — Dandiya Nights आयोजन समिति</p></div></section>
+  </main>
+  <footer><span>SWANG, GOMIA</span><span>Thank you for celebrating with us</span></footer>
+</body>
+</html>
